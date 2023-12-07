@@ -17,23 +17,26 @@ class SignupController extends BaseController
     public function store(){
         $rules = [
             'name'          => 'required|min_length[2]|max_length[50]',
-            'email'         => 'required|min_length[4]|max_length[100]|valid_email|is_unique[users.email]',
-            'password'      => 'required|min_length[4]|max_length[50]',
+            'email'         => 'required|min_length[2]|max_length[100]|valid_email',
+            'password'      => 'required|min_length[2]|max_length[50]',
             // 'confirmpassword'  => 'matches[password]'
+           
         ];
+
 
         if($this->validate($rules)){
             $data =[
                 'name'=>$this->request->getVar('name'),
                 'email'=>$this->request->getVar('email'),
-                'password'=>$this->request->getVar('password')
+                // 'password'=>$this->request->getVar('password'),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
 
            $userModel=new UserModel();
            $userModel->save($data);
            $session =session();
            $session->setFlashdata('msg','Signup Completed');
-           return redirect()->to('/signin');
+           return redirect()->to('/login');
 
         }else {
             $data['validation'] =$this->validator;
