@@ -9,38 +9,44 @@ class Products1Migration extends Migration
     public function up()
     {
         $this->forge->addField([
-            'product_id'=>[
+            'id'=>[
                 'type' => 'INT',
                 'constraint' => 5,
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
+
+            'category_id'=>[
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => true,
+               
+            ],
             'product'=>[
                 'type' => 'VARCHAR',
                 'constraint' => 100,
             ],
-            'category'=>[
-                'type' => 'VARCHAR',
-                'constraint' => 100,
-            ],
+            
             'price'=>[
-                'type' => 'INT',
+                'type' => 'TEXT',
             ],
             'sku'=>[
-                'type' => 'VARCHAR',
+                'type' => 'varchar',
                 'constraint' => 50,
             ],
             'model'=>[
-                'type' => 'VARCHAR',
+                'type' => 'varchar',
                 'constraint' => 50,
             ],
         ]);
-        $this->forge->addKey('product_id', true);
-        $this->forge->createTable('product1');
+        $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('category_id', 'category', 'id', 'CASCADE', 'CASCADE');
+
+        $this->forge->createTable('products');
     }
 
     public function down()
     {
-        $this->forge->dropTable('product1');
+        $this->forge->dropTable('products');
     }
 }

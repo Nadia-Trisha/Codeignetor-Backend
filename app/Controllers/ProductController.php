@@ -92,7 +92,7 @@ class ProductController extends BaseController
             $this->products->insert($data);
             $session = session();
             $session->setFlashdata('msg', 'Inserted Successfully');
-            $this->response->redirect('/products');
+            $this->response->redirect('/category');
         }
 
 

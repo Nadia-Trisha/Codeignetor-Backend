@@ -28,4 +28,12 @@ $routes->post('login','LoginController::login');
 //logout
 $routes->get('/signout','LoginController::logout');
 
+//catagory
+$routes->get('category','CategoryController::index'); //category list
+$routes->get('category/create','CategoryController::create'); //category entry form
+$routes->post('category/store','CategoryController::store'); //category store/save
+$routes->get('category/edit/(:num)','CategoryController::edit/$1'); //category edit form
+$routes->post('category/update/(:num)','CategoryController::update/$1'); //category update
+$routes->get('category/delete/(:num)','CategoryController::delete/$1'); //category delete
+
 
