@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\CategoryModel;
 use App\Models\ProductModel;
 
 
@@ -11,25 +12,29 @@ class ProductController extends BaseController
 {
 
     private $products ;
+    private $category;
     protected $helpers = ['form'];
 
 
     public function __construct()
     {
         $this->products = new ProductModel();
+        $this->category = new CategoryModel();
     }
 
     public function index()
     {
+        $this->products->join('category','category_id = products.category_id');
         $data['items'] = $this->products->findAll();
-        $data['title'] = "This is my title";
+        $data['title'] = "Display all product";
 
-        // print_r($data['products']);
+        // print_r($data);
         return view('products/index', $data);
     }
 
     public function create(){
-        return view('products/create');
+        $data['items'] = $this->category->findAll();
+        return view('products/create', $data);
     }
 
     public function edit($id){
@@ -70,29 +75,29 @@ class ProductController extends BaseController
         // return $this->request->getVar('product');
         $data = [
             'product' => $this->request->getVar('product'),
-            'category' => $this->request->getVar('category'),
+            'category_id' => $this->request->getVar('category'),
             'model' => $this->request->getVar('model'),
             'price' => $this->request->getVar('price'),
             'sku' => $this->request->getVar('sku'),
-            'photo'=> $this->request->getFile('photo')->getName('photo'),
+            // 'photo'=> $this->request->getFile('photo')->getName(' '),
         ];
 
         $rules = [
             'product' => 'required|max_length[30]|min_length[3]',
             'price' => 'required|numeric',
             'sku' => 'required|min_length[3]',
-            'photo' =>'uploaded[photo]|max_size[photo,1024]|ext_in[photo,jpg,jpeg]'
+            // 'photo' =>'uploaded[photo]|max_size[photo,1024]|ext_in[photo,jpg,jpeg]'
         ];
 
         if(! $this->validate($rules)){
             return view('products/create');
         }else{
-            $img = $this->request->getfile('photo');
-            $img->move(WRITEPATH.'uploads');
+            // $img = $this->request->getfile('photo');
+            // $img->move(WRITEPATH.'uploads');
             $this->products->insert($data);
             $session = session();
             $session->setFlashdata('msg', 'Inserted Successfully');
-            $this->response->redirect('/category');
+            $this->response->redirect('/products');
         }
 
 

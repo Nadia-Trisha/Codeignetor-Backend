@@ -4,16 +4,17 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\CategoryModel;
-
-
+use App\Models\ProductModel;
 
 class CategoryController extends BaseController
 {  
+    // private $products;
     private $category ;
     protected $helpers = ['form'];
 
     public function __construct()
     {
+        // $this->products = new ProductModel();
         $this->category = new CategoryModel();
     }
 

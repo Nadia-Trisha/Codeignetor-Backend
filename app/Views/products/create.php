@@ -60,16 +60,18 @@
                             <?php echo validation_list_errors();?>
 
                             <!-- No Labels Form -->
-                            <form class="row g-3" action="store" method="post" enctype="multipart/form-data">
+                            <form class="row g-3" action="/store" method="post" enctype="multipart/form-data">
                                 <div class="col-md-12 mb-3">
-                                    <input type="text" class="form-control" name="product" value="<?php set_value('product')?>" placeholder="Product Name">
+                                    <input type="text" class="form-control" name="product" value="<?php //set_value('product')?>" placeholder="Product Name">
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <select id="inputState" class="form-select" value="<?php set_value('category')?>" name="category">
+                                    <select id="inputState" class="form-select" value="<?php //set_value('category')?>" name="category">
                                         <option selected>Category</option>
-                                        <option>Car</option>
-                                        <option>Bus</option>
-                                        <option>Truck</option>
+                                       <?php //print_r($items);?>
+                                        <?php foreach($items as $item): ?>
+                                        <option value="<?php echo $item['id']?>" ><?php echo $item['category']?></option>
+                                        
+                                        <?php endforeach; ?>
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-3">
@@ -83,7 +85,7 @@
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <input type="file" class="form-control" name="photo" placeholder="Upload a photo" value="<?php set_value('photo')?>" placeholder="SKU">
+                                    <!-- <input type="file" class="form-control" name="photo" placeholder="Upload a photo" value="<?php //set_value('photo')?>" placeholder="SKU"> -->
                                 </div>
 
 
