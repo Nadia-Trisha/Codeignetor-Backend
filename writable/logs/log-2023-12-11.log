@@ -1,0 +1,84 @@
+INFO - 2023-12-11 03:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-11 06:38:50 --> syntax error, unexpected token "public"
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('productsall', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\public\\index.php')
+CRITICAL - 2023-12-11 06:38:51 --> syntax error, unexpected token "public"
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('productsall', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\public\\index.php')
+CRITICAL - 2023-12-11 06:38:58 --> syntax error, unexpected token "public"
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('productsall', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\public\\index.php')
+CRITICAL - 2023-12-11 06:38:58 --> syntax error, unexpected token "public"
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('productsall', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\public\\index.php')
+CRITICAL - 2023-12-11 06:40:01 --> syntax error, unexpected token "public"
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('productsall', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-11 06:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-11 06:41:01 --> syntax error, unexpected token "public"
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-11 06:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-11 06:41:02 --> syntax error, unexpected token "public"
+in APPPATH\Filters\Cors.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\app\\Filters\\Cors.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Cors')
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Cors')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\new server\\xampp\\htdocs\\codeignator project\\codeigniter\\ci_project1\\public\\index.php')

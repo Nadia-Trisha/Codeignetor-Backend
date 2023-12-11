@@ -36,4 +36,9 @@ $routes->get('category/edit/(:num)','CategoryController::edit/$1',['filter' => '
 $routes->post('category/update/(:num)','CategoryController::update/$1',['filter' => 'authGurd']); //category update
 $routes->get('category/delete/(:num)','CategoryController::delete/$1',['filter' => 'authGurd']); //category delete
 
+//Frontend
+$routes->get('productsall', 'FrontendProductController::index');
+$routes->post('product/(:num)', 'FrontendProductController::show/$1');
+
+
 
