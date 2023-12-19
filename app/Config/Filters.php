@@ -10,6 +10,7 @@ use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
 use App\Filters\Cors;
+use App\Filters\NoAuth;
 
 class Filters extends BaseConfig
 {
@@ -29,6 +30,7 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
         'authGurd'      => AuthGurd::class,// included
         'cors'          => Cors::class, 
+        'noAuth'        => NoAuth::class //for multiple admin
     ];
 
     /**

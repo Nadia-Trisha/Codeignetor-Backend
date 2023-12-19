@@ -15,7 +15,7 @@
 <li class="nav-item active">
     <a class="nav-link" href="/">
         <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span  class="sidebar-brand-text mx-3 text-danger">Dashboard</span></a>
+        <span  class="sidebar-brand-text mx-3 text-danger"> Editor Dashboard</span></a>
 </li>
 
 <!-- Divider -->

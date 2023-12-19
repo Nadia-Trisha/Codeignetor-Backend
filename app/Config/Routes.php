@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'AdminHome::index',['filter' => 'authGurd']);
-// $routes->get('/about', 'about::index');
+
 // $routes->get('/contact', 'contact::index');
 // $routes->get('/services', 'services::index');
 $routes->get('/', 'ProductController::index',['filter' => 'authGurd']);
@@ -37,8 +37,13 @@ $routes->post('category/update/(:num)','CategoryController::update/$1',['filter'
 $routes->get('category/delete/(:num)','CategoryController::delete/$1',['filter' => 'authGurd']); //category delete
 
 //Frontend
-$routes->get('productsall', 'FrontendProductController::index');
-$routes->post('product/(:num)', 'FrontendProductController::show/$1');
+$routes->get('productsall', 'frontendProductController::index');
+$routes->post('product/(:num)', 'frontendProductController::show/$1');
+$routes->post('registration', 'frontendRegistrationController::Registration');
+
+//Editor
+$routes->get('/editor', 'EditorController::index',['filter' => 'noAuth']);
+// $routes->get('/about', 'about::index');
 
 
 
