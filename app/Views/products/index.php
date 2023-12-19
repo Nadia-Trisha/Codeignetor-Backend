@@ -35,7 +35,9 @@
         <!-- Sidebar -->
         <?php
         echo $this->include('includes/sidebar');
+
         ?>
+       
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
