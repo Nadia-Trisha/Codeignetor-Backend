@@ -95,7 +95,8 @@
                                                 <td>
 
                                                     <a href="<?php echo base_url('/products/edit/'.$item['id'])?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
-                                                    <a href="<?php echo base_url('/category'.$item['id'])?>" class="btn btn-danger" onclick="return confirm('Are You Sure to Delete?')"><i class="fa fa-trash"></i></a>
+
+                                                    <a href="<?php echo base_url('/category/delete/'.$item['id'])?>" class="btn btn-danger" onclick="return confirm('Are You Sure to Delete?')"><i class="fa fa-trash"></i></a>
 
                                                 </td>
                                             </tr>

@@ -8,6 +8,7 @@ class EditorController extends BaseController
 {
     public function index()
     {
-        return view("editorDashboard");
+        return view("dashboard");
+
     }
 }

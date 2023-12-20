@@ -8,13 +8,13 @@ use App\Models\ProductModel;
 
 class CategoryController extends BaseController
 {  
-    // private $products;
+    private $products;
     private $category ;
     protected $helpers = ['form'];
 
     public function __construct()
     {
-        // $this->products = new ProductModel();
+        $this->products = new ProductModel();
         $this->category = new CategoryModel();
     }
 
@@ -54,6 +54,24 @@ class CategoryController extends BaseController
 
 
         
+        public function edit($id){
+            //echo $id;
+            $data = $this->category->find($id);
+            // print_r($data);
+            return view('category/edit', $data);
+    
+        }
+
+
+        public function delete($id){
+            //echo $id;
+            $this->category->where('id', $id);
+            $this->category->delete();
+            $session = session();
+            $session->setFlashdata('msg', 'Deleted Successfully');
+            //return redirect("products");
+            $this->response->redirect('/category');
+        }
     }
 
     

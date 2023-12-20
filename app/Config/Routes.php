@@ -12,10 +12,10 @@ $routes->get('/', 'AdminHome::index',['filter' => 'authGurd']);
 $routes->get('/', 'ProductController::index',['filter' => 'authGurd']);
 $routes->get('products', 'ProductController::index',['filter' => 'authGurd']);
 $routes->get('create', 'ProductController::create',['filter' => 'authGurd']);
-$routes->post('store', 'ProductController::store',['filter' => 'authGurd']);
-$routes->get('products/delete/(:num)', 'ProductController::delete/$1',['filter' => 'authGurd']);
-$routes->get('products/edit/(:num)', 'ProductController::edit/$1',['filter' => 'authGurd']);
-$routes->put('products/update/(:num)', 'ProductController::update/$1',['filter' => 'authGurd']);
+$routes->post('store', 'ProductController::store');
+$routes->get('products/delete/(:num)', 'ProductController::delete/$1');
+$routes->get('products/edit/(:num)', 'ProductController::edit/$1');
+$routes->put('products/update/(:num)', 'ProductController::update/$1');
 
 //signup
 $routes->get('signup', 'SignupController::index');

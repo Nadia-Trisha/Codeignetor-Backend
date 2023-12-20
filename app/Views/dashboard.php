@@ -29,7 +29,22 @@
 
         <!-- Sidebar -->
         <?php 
-            echo $this->include('includes/sidebar');
+            // echo $this->include('includes/sidebar');
+
+            
+        ?>
+
+<?php 
+        
+        if(session()->get('user_role')=="Admin"){
+           echo  $this->include('includes/sidebar');       
+        }
+
+        if(session()->get('user_role')=="Editor"){
+            echo $this->include('includes/editorSidebar'); 
+        }       
+        ?>
+
         ?>
         <!-- End of Sidebar -->
 

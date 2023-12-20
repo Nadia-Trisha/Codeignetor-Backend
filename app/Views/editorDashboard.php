@@ -9,13 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Editor Dashboard</title>
+    <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <!-- <link
+    <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet"> -->
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
@@ -28,9 +28,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php 
-            echo $this->include('includes/sidebar');
-        ?>
+        <?= $this->include('includes/editorSidebar'); ?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -40,26 +38,20 @@
             <div id="content">
 
                 <!-- Topbar -->
-        <?php 
-            echo $this->include('includes/topbar');
-        ?>
+               <?php echo $this->include("includes/topbar") ?>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                <!-- <h1>My Session Data</h1> -->
+                <?php 
+                    //print_r($_SESSION);
+                ?>
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        
 
-                    <!-- check session -->
-
-                       <!-- <h1>My Session Data</h1>
-
-                       <?php 
-                    //    print_r($_SESSION);
-                       ?>  -->
-
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Editor Dashboard</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
@@ -389,9 +381,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-        <?php 
-            echo $this->include('includes/footer');
-        ?>
+           <?php echo $this->include("includes/footer"); ?>
             <!-- End of Footer -->
 
         </div>
@@ -419,7 +409,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="<?php echo site_url('/signout');?>">Logout</a>
+                    <a class="btn btn-primary" href="<?= site_url('/signout') ?>">Logout</a>
                 </div>
             </div>
         </div>

@@ -24,15 +24,15 @@ class ProductController extends BaseController
 
     public function index()
     {
-        $this->products->join('category','category_id = products.category_id');
         $data['items'] = $this->products->findAll();
         $data['title'] = "Display all product";
-
+        
         // print_r($data);
         return view('products/index', $data);
     }
-
+    
     public function create(){
+        $this->products->join('category','category_id = products.category_id');
         $data['items'] = $this->category->findAll();
         return view('products/create', $data);
     }
@@ -47,7 +47,7 @@ class ProductController extends BaseController
 
 
     public function update($id){
-        $this->products = new ProductModel(); 
+        // $this->products = new ProductModel(); 
         $data = [
             'product' => $this->request->getPost('product'),
             'category' => $this->request->getPost('category'),
@@ -65,8 +65,10 @@ class ProductController extends BaseController
 
     public function delete($id){
         //echo $id;
-        $this->products->where('product_id', $id);
+        $this->products->where('id', $id);
         $this->products->delete();
+        $session = session();
+        $session->setFlashdata('msg', 'Deleted Successfully');
         //return redirect("products");
         $this->response->redirect('/products');
     }

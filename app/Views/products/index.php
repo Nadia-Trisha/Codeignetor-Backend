@@ -92,12 +92,12 @@
                                             <tr>
                                                 <td><?php echo $item['id'] ?></td>
                                                 <td><?php echo $item['product'] ?></td>
-                                                <td><?php echo $item['category'] ?></td>
+                                                <td><?php echo $item['category_id'] ?></td>
                                                 <td><?php echo $item['price'] ?></td>
                                                 <td><?php echo $item['sku'] ?></td>
                                                 <td><?php echo $item['model'] ?></td>
                                                 <td>
-                                                    <a href="<?php echo base_url('/products/delete/'.$item['product'])?>" class="btn btn-danger" onclick="return confirm('Are You Sure to Delete?')"><i class="fa fa-trash"></i></a>
+                                                    <a href="<?php echo base_url('/products/delete/'.$item['id'])?>" class="btn btn-danger" onclick="return confirm('Are You Sure to Delete?')"><i class="fa fa-trash"></i></a>
 
                                                     <a href="<?php echo base_url('/products/edit/'.$item['id'])?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
                                                 </td>

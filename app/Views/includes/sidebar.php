@@ -5,7 +5,7 @@
     <div class="sidebar-brand-icon rotate-n-15">
         <!-- <i class="fas fa-laugh-wink"></i> -->
     </div>
-    <div class="sidebar-brand-text mx-3 text-primary">Aircon- AC Repair</div>
+    <div class="sidebar-brand-text mx-3 text-White">Aircon- AC Repair</div>
 </a>
 
 <!-- Divider -->
@@ -15,7 +15,7 @@
 <li class="nav-item active">
     <a class="nav-link" href="/">
         <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span  class="sidebar-brand-text mx-3 text-danger">Dashboard</span></a>
+        <span  class="sidebar-brand-text mx-3 text-White"> Admin Dashboard</span></a>
 </li>
 
 <!-- Divider -->
@@ -31,13 +31,13 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#product"
         aria-expanded="true" aria-controls="collapseTwo">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Products</span>
+        <span>Services</span>
     </a>
     <div id="product" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="/products">All Products</a>
-            <a class="collapse-item" href="/create">Add New</a>
+            <a class="collapse-item" href="/products">All Services</a>
+            <a class="collapse-item" href="/create">Add New Services</a>
         </div>
     </div>
 </li>
@@ -96,8 +96,8 @@
     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
+            <a class="collapse-item" href="login">Login</a>
+            <a class="collapse-item" href="signup">Register</a>
             <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Other Pages:</h6>
