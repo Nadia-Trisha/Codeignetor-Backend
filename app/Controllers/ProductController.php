@@ -81,7 +81,7 @@ class ProductController extends BaseController
             'model' => $this->request->getVar('model'),
             'price' => $this->request->getVar('price'),
             'sku' => $this->request->getVar('sku'),
-            // 'photo'=> $this->request->getFile('photo')->getName(' '),
+            // 'photo'=> $this->request->getFile('photo')->getName(''),
         ];
 
         $rules = [
