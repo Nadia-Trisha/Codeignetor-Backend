@@ -30,7 +30,7 @@ $routes->get('/signout','LoginController::logout');
 
 //catagory
 $routes->get('category','CategoryController::index',['filter' => 'authGurd']); //category list
-$routes->get('category/create','CategoryController::create',['filter' => 'authGurd']); //category entry form
+$routes->get('category/create','CategoryController::create',); //category entry form
 $routes->post('category/store','CategoryController::store',['filter' => 'authGurd']); //category store/save
 $routes->get('category/edit/(:num)','CategoryController::edit/$1',['filter' => 'authGurd']); //category edit form
 $routes->post('category/update/(:num)','CategoryController::update/$1',['filter' => 'authGurd']); //category update
@@ -44,6 +44,12 @@ $routes->post('registration', 'frontendRegistrationController::Registration');
 //Editor
 $routes->get('/editor', 'EditorController::index',['filter' => 'noAuth']);
 // $routes->get('/about', 'about::index');
+
+//Enquries
+$routes->get('/enquries' , 'EnquriesController::index');
+$routes->get('/enquries/delete/(:num)','EnquriesController::delete/$1');
+$routes->get('enquries/edit/(num:)','EnquriesController::edit/$1');
+$routes->get('enquries/update/','EnquriesController::update');
 
 
 

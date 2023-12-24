@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProductModel extends Model
+class Enquries extends Model
 {
-    protected $table            = 'products';
+    protected $table            = 'enquery';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['product', 'category_id','price','sku','model'];
+    protected $allowedFields    = ['name','email','subject','messege'];
 
     // Dates
     protected $useTimestamps = false;

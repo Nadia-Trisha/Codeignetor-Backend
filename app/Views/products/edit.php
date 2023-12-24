@@ -65,14 +65,7 @@
                                 <div class="col-md-12 mb-3">
                                     <input type="text" class="form-control" name="product" value="<?php echo $product ;?>" placeholder="Product Name">
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <select id="inputState" class="form-select" name="category">
-                                        <option>Category</option>
-                                        <option <?php echo ($category=="Car")? "selected":""?>>Car</option>
-                                        <option <?php echo ($category=="Bus")? "selected":""?>>Bus</option>
-                                        <option <?php echo ($category=="Truck")? "selected":""?>>Truck</option>
-                                    </select>
-                                </div>
+                                
                                 <div class="col-md-6 mb-3">
                                     <input type="text" class="form-control" name="model" value="<?php echo $model ;?>" placeholder="Model">
                                 </div>

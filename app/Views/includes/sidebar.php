@@ -59,6 +59,24 @@
 </li>
 
 
+
+<!-- Nav Item - Pages Enquries -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Enquries"
+        aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Enquries</span>
+    </a>
+    <div id="Enquries" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="/enquries">All Enquries</a>
+            <!-- <a class="collapse-item" href="/category/create">Add Categories</a> -->
+        </div>
+    </div>
+</li>
+
+
 <!-- Nav Item - Utilities Collapse Menu -->
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
